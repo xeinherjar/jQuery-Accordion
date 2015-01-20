@@ -1,5 +1,5 @@
 .container {
-  width: 200px; }
+  width: 400px; }
 
 .accordion {
   width: 100%;
@@ -20,14 +20,17 @@
     color: black;
     background-color: white;
     margin: 2.5px;
-    padding: 5px; }
-  .acc-item > .collapsed > p {
-    visibility: hidden; }
+    padding: 5px;
+    transition: height .5s ease-out;
+    height: auto; }
 
 .collapsed > p {
-  display: none; }
+  height: 0;
+  padding: 0;
+  margin: 0;
+  opacity: 0; }
 
 .expanded > p {
-  visibility: visible; }
+  opacity: 1; }
 
 /*# sourceMappingURL=main.css.map */

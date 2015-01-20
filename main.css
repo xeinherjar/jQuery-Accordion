@@ -4,32 +4,39 @@
 .accordion {
   width: 100%;
   height: 100%;
-  border: 2px solid green; }
+  border: 2px solid black; }
   .accordion > div {
     padding: 0;
     margin: 0; }
 
 .acc-item {
-  width: 100%; }
+  width: 100%;
+  background-color: #404040; }
   .acc-item > h2 {
     color: white;
-    background-color: blue;
-    border: 2px solid red;
+    background-color: #A68D5D;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    padding: 5px;
     margin: 0; }
+    .acc-item > h2:hover {
+      background-color: #847C6A; }
   .acc-item > p {
-    color: black;
-    background-color: white;
-    transition: height .5s ease-out;
+    color: #BCBDC1;
+    background-color: #404040;
+    transition: height .5s ease-out, opacity .5s 0;
     height: 0;
-    padding: 0;
-    margin: 0;
+    padding: 0 2.5px;
+    margin: 0 5px;
     opacity: 0;
     overflow: scroll; }
 
+.expanded > h2 {
+  border-bottom: 2px solid black; }
 .expanded > p {
   opacity: 1;
   height: 200px;
-  margin: 2.5px;
   padding: 5px; }
 
 /*# sourceMappingURL=main.css.map */

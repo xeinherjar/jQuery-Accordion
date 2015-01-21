@@ -7,6 +7,7 @@ Array.prototype.myMap = function(callback) {
 };
 
 Array.prototype.myReduce = function(callback, inital) {
+  if (this.length < 1) { throw new Error("Empty array not supported"); }
   var acc = inital || this[0];
   for (var i = 1; i < this.length; i++) {
     acc = callback(acc, this[i], i, this);

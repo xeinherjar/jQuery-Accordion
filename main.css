@@ -21,6 +21,7 @@
     padding: 5px;
     margin: 0; }
     .acc-item > h2:hover {
+      cursor: pointer;
       background-color: #847C6A; }
   .acc-item > p {
     color: #BCBDC1;
@@ -36,7 +37,6 @@
   border-bottom: 2px solid black; }
 .expanded > p {
   opacity: 1;
-  height: 200px;
-  padding: 5px; }
+  height: 200px; }
 
 /*# sourceMappingURL=main.css.map */
